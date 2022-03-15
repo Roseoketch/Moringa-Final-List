@@ -39,9 +39,9 @@ python3 manage.py -m venv virtual
 - As a Moringa Admin, you upload students information to the Database.
 
 ## CRUD Table Display
-| Adding New Student  | Updating Data of Existing Student  | Deleting the Student |
+| Adding New Student  | Updating Data of Existing Student  | Download the Students Data |
 | :------------ |:---------------:| -----:|
-|  ![](app/static/assets/1st.png) | ![](app/static/assets/add.png) | ![](app/static/assets/1st.png) |
+|  ![](app/static/assets/add.png) | ![](app/static/assets/edit.png) | ![](app/static/assets/down.png) |
 
 
 
