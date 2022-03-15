@@ -42,7 +42,7 @@ python3 manage.py -m venv virtual
 | Adding New Student  | Updating Data of Existing Student  | Deleting the Student |
 | :------------ |:---------------:| -----:|
 |  ![](app/static/assets/1st.png) | ![](app/static/assets/1st.png) | ![](app/static/assets/1st.png) |
-|
+
 
 
 ## Technology Used  
