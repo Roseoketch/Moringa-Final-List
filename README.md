@@ -41,7 +41,7 @@ python3 manage.py -m venv virtual
 ## CRUD Table Display
 | Adding New Student  | Updating Data of Existing Student  | Deleting the Student |
 | :------------ |:---------------:| -----:|
-|  ![](app/static/assets/1st.png) | ![](app/static/assets/1st.png) | ![](app/static/assets/1st.png) |
+|  ![](app/static/assets/1st.png) | ![](app/static/assets/add.png) | ![](app/static/assets/1st.png) |
 
 
 

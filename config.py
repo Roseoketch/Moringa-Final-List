@@ -19,7 +19,7 @@ class ProdConfig(Config):
 
 
 class DevConfig(Config):
-    DEBUG = False
+    DEBUG = True
 
 
 config_options = {
