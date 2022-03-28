@@ -2,6 +2,11 @@ from flask import Flask, render_template, request, url_for, redirect, Response, 
 import io
 from io import TextIOWrapper
 import csv
+# Converting Python Dictionary to
+# XML and saving to a file
+from dicttoxml import dicttoxml
+
+from xml.dom.minidom import parseString
 from ..models import Grade
 from .. import db
 from . import main
@@ -83,3 +88,17 @@ def download_csv():
     output.seek(0)
     db.session.commit()
     return Response(output, mimetype="text/csv", headers={"Content-Disposition":"attachment;filename=Final_List.csv"})
+
+@main.route('/xml_report')
+def xml_report():
+    data = db.session.execute("SELECT id,name,cohort,ip_scores FROM grades")
+
+    # Variable name of Dictionary is data
+    xml = dicttoxml(data)
+    # Obtain decode string by decode()
+    # function
+    xml_decode = xml.decode()
+    xmlfile = open("dict.xml", "w")
+    xmlfile.write(xml_decode)
+    xmlfile.close()
+    return Response(xml_decode, mimetype="text/xml", headers={"Content-Disposition":"attachment;filename=dict.xml"})
