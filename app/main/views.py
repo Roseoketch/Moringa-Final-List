@@ -92,6 +92,7 @@ def download_csv():
 @main.route('/xml_report')
 def xml_report():
     data = db.session.execute("SELECT id,name,cohort,ip_scores FROM grades")
+finallistmoringa.herokuapp.com/
 
     # Variable name of Dictionary is data
     xml = dicttoxml(data)
